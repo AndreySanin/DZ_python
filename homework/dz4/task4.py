@@ -16,11 +16,11 @@ def polynomial(k,koeffs):
     polynom=[]
     for i in koeffs:
         if i!=0:
-            polynom.append(f"{str(i)}x^{str(k)}+")
+            polynom.append(f"{str(i)}x^{str(k)} + ")
             k-=1
         else:
             k-=1
-    polynom.append(str(random.randint(0, 100)))
+    polynom.append(f"{str(random.randint(0, 100))} = 0")
    
     return ''.join(polynom)
 
